@@ -39,7 +39,7 @@ public class TodoList {
 				System.out.println(rs.getString("work_name"));
 				// IDを設定
 				bean.setId(rs.getInt("id"));
-				System.out.println(rs.getInt("price"));
+				System.out.println(rs.getInt("id"));
 				// 商品数を設定
 				bean.setName(rs.getString("name"));
 				System.out.println(rs.getString("name"));
@@ -47,8 +47,8 @@ public class TodoList {
 				bean.setDeadline(rs.getString("deadline"));
 				System.out.println(rs.getString("deadline"));
 				// 商品数を設定
-				bean.setCompletion(rs.getString("completion"));
-				System.out.println(rs.getString("completion"));
+				bean.setCompletion(rs.getString("completion_time"));
+				System.out.println(rs.getString("completion_time"));
 
 				// Beanクラスをリストに追加
 				beanList.add(bean);
@@ -82,13 +82,13 @@ public class TodoList {
 			// DAOクラスをインスタンス化
 			dao = new TodoDao();
 			// 現在の商品一覧を検索
-			rs  = dao.selectItem(workId);
+			rs  = dao.selectItem();
 
 			// 検索結果を処理
 			while(rs.next()) {
 
 				// 商品IDを設定
-				bean.setItemId(workId);
+				bean.setWorkId(rs.getInt("work_id"));
 				// 商品名を設定
 				bean.setWorkName(rs.getString("work_name"));
 				// 商品価格を設定
@@ -99,7 +99,7 @@ public class TodoList {
 				bean.setDeadline(rs.getString("deadline"));
 				// 商品数を設定
 				bean.setCompletion(rs.getString("completion"));
-				
+
 			}
 
 		} catch (SQLException e) {

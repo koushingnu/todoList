@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Java入門 ログイン機能.
  */
-@WebServlet("/LoginServletShopping")
+@WebServlet("/LoginServletTodo")
 public class LoginServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -67,7 +67,7 @@ public class LoginServlet extends HttpServlet {
 				// ログイン状態
 				session.setAttribute("login_db", "login");
 				// ③-2-2 つぎに表示させる画面（ビュー）を指定
-				rd = request.getRequestDispatcher("./ShoppingServlet");
+				rd = request.getRequestDispatcher("./TodoServlet");
 
 			} else {
 

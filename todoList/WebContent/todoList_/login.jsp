@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<title>Java入門</title>
-		<link href="/schoo/todoList_/css/shopping.css" rel="stylesheet" type="text/css" />
+		<link href="/todoList/todoList_/css/shopping.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<div class="login_pane">

@@ -1,6 +1,6 @@
 * {
 	font-family: Meiryo;
-	font-size  : 18px; 
+	font-size  : 18px;
 }
 
 body {
@@ -61,4 +61,34 @@ input.common_button {
 	margin : 15px auto;
 	border-radius   : 5px;
 	background-color: #49a9d4;
+}
+input.button {
+	width  : 70px;
+	color  : #fff;
+	font-size : 15px;
+	text-align: center;
+	padding: 10px 0 10px;
+	margin : 15px auto;
+	border-radius   : 5px;
+	background-color: #49a9d4;
+}
+
+.register_buttons {
+	text-align: center;
+}
+
+.search_button {
+	width  : 55px;
+	height : 30px;
+	color  : #fff;
+	font-size : 15px;
+	text-align: center;
+	padding: 3px 0 3px;
+	margin : 15px 4px;
+	border-radius   : 5px;
+	background-color: #49a9d4;
+}
+
+.search {
+	float : right;
 }

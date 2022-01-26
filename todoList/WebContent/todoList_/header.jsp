@@ -7,6 +7,6 @@
 	<%-- ログイン済みの場合はIDを表示 --%>
 	ようこそ「<jsp:getProperty property="name" name="user_db"/>」さん！
 	<% //TODO:2-④ パラメータ名「submit」で履歴およびログアウトを判定する %>
-	<a href="/schoo/LoginServletShopping?submit=履歴">購入履歴</a>
-	<a href="/schoo/LoginServletShopping?submit=ログアウト">ログアウト</a>
+	<!-- <a href="/todoList/LoginServletShopping?submit=履歴">購入履歴</a> -->
+	<a href="/todoList/LoginServletShopping?submit=ログアウト">ログアウト</a>
 </div>
